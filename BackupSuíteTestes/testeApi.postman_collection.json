@@ -1,0 +1,100 @@
+{
+	"info": {
+		"_postman_id": "d445724b-0ed5-43dd-9579-011ce2592a77",
+		"name": "testeApi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Cadastro/usuário",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://6258859f92dc8873186265de.mockapi.io/api/users",
+					"protocol": "https",
+					"host": [
+						"6258859f92dc8873186265de",
+						"mockapi",
+						"io"
+					],
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Novo usuário",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJfaWQiOiI2MjYwM2JlYTkyZGYwYmMwZjM0MWFjYjAiLCJpYXQiOjE2NTA0NzM5NjIxNzksImV4cCI6MTY1MDQ5MTk2MjE3OX0.qQ-o6MEdXJ6uKrNKYXS0dLokQSTaAhneyI8MFABXBcM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Luiz\",\r\n    \"email\": \"Luizf01@gmail.com\",\r\n    \"dt_nascimento\": 16499718467,\r\n    \"password\": \"password 11\",\r\n    \"number_of_children\": \"numberOfChildren 11\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://mockapi.io/api/users",
+					"protocol": "http",
+					"host": [
+						"mockapi",
+						"io"
+					],
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cargos",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}

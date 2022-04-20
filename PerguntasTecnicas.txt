@@ -1,0 +1,14 @@
+1 - Quanto tempo você usou para completar a solução apresentada? 
+[res]:  12 horas .
+
+[res]: O que você faria se tivesse mais tempo? 
+Validação nas requisições, gerar um acess token com a url da aplicação, incluir mais usuários e gerar um teste de carga e stress. 
+
+
+
+2 - Considerando o seguinte cenário: Você está trabalhando em um time que cuida de 5 micro-servicos, que são utilizados por diversos sitemas diferentes. Como você garantiria a qualidade e a integridade desses sistemas? (Detalhe técnicas, tecnologias e métodos a serem utilizados)
+
+[res]: Seguindo o fluxo determinado pela squad nas sprints, executando conforme as prioridades determinadas, acompanhando nas ferramentas padrão da empresa, seja Jira software, Azure ou outras. Utilização de metodologia Ágil, Scrum Kanban. Relatórios de execuções, interação com a squad e validações. 
+
+
+

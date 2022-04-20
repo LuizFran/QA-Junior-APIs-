@@ -1,0 +1,75 @@
+{
+	"id": "672dcde8-9427-4027-bda7-acee7971dffd",
+	"name": "testeApi",
+	"timestamp": "2022-04-20T18:03:51.811Z",
+	"collection_id": "20588261-d445724b-0ed5-43dd-9579-011ce2592a77",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 1,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "dc70b62c-e03d-46bb-bbda-beb9d8ea588a",
+			"name": "Cadastro/usuário",
+			"url": "https://6258859f92dc8873186265de.mockapi.io/api/users",
+			"time": 753,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				753
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "77164400-ce4a-402a-9fee-ab9dcdbbd296",
+			"name": "Novo usuário",
+			"url": "http://mockapi.io/api/users",
+			"time": 642,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				642
+			],
+			"allTests": [
+				{
+					"Status code is 200": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 1395,
+	"collection": {
+		"requests": [
+			{
+				"id": "dc70b62c-e03d-46bb-bbda-beb9d8ea588a",
+				"method": "GET"
+			},
+			{
+				"id": "77164400-ce4a-402a-9fee-ab9dcdbbd296",
+				"method": "POST"
+			},
+			{
+				"id": "b8a2ee86-a35d-43f1-9315-50d980ab17d1",
+				"method": "GET"
+			}
+		]
+	}
+}

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="5.0" jmeter="5.4.3">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="Plano de Teste" enabled="true">
+      <stringProp name="TestPlan.comments"></stringProp>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.tearDown_on_shutdown">true</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="Variáveis Definidas Pelo Usuário" enabled="true">
+        <collectionProp name="Arguments.arguments"/>
+      </elementProp>
+      <stringProp name="TestPlan.user_define_classpath"></stringProp>
+    </TestPlan>
+    <hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Grupo de Usuários" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Controlador de Iteração" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">2</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">10</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
+      </ThreadGroup>
+      <hashTree>
+        <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="Gerenciador de Cabeçalhos HTTP" enabled="true">
+          <collectionProp name="HeaderManager.headers"/>
+        </HeaderManager>
+        <hashTree/>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Requisição GET" enabled="true">
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">&quot;requestId&quot;: &quot;37cc23a3-6643-4e79-b4a8-f3033239d7a1&quot;,&#xd;
+    &quot;items&quot;: [&#xd;
+        {&#xd;
+            &quot;name&quot;: &quot;Henry&quot;,&#xd;
+            &quot;Email&quot;: &quot;Gwen58@yahoo.com&quot;,&#xd;
+            &quot;dt_nascimento&quot;: 1649971067,&#xd;
+            &quot;password&quot;: &quot;password 1&quot;,&#xd;
+            &quot;numberOfChildren&quot;: &quot;numberOfChildren 1&quot;,&#xd;
+            &quot;id&quot;: &quot;1&quot;&#xd;
+        },&#xd;
+        {&#xd;
+            &quot;name&quot;: &quot;Gwendolyn&quot;,&#xd;
+            &quot;Email&quot;: &quot;Maymie_Runte8@yahoo.com&quot;,&#xd;
+            &quot;dt_nascimento&quot;: 1649971007,&#xd;
+            &quot;password&quot;: &quot;password 2&quot;,&#xd;
+            &quot;numberOfChildren&quot;: &quot;numberOfChildren 2&quot;,&#xd;
+            &quot;id&quot;: &quot;2&quot;&#xd;
+        },&#xd;
+        {&#xd;
+            &quot;name&quot;: &quot;Janet&quot;,&#xd;
+            &quot;Email&quot;: &quot;Edison_Metz@yahoo.com&quot;,&#xd;
+            &quot;dt_nascimento&quot;: 1649970947,&#xd;
+            &quot;password&quot;: &quot;password 3&quot;,&#xd;
+            &quot;numberOfChildren&quot;: &quot;numberOfChildren 3&quot;,&#xd;
+            &quot;id&quot;: &quot;3&quot;&#xd;
+        },&#xd;
+        {&#xd;
+            &quot;name&quot;: &quot;Drew&quot;,&#xd;
+            &quot;Email&quot;: &quot;Anabelle50@gmail.com&quot;,&#xd;
+            &quot;dt_nascimento&quot;: 1649970887,&#xd;
+            &quot;password&quot;: &quot;password 4&quot;,&#xd;
+            &quot;numberOfChildren&quot;: &quot;numberOfChildren 4&quot;,&#xd;
+            &quot;id&quot;: &quot;4&quot;&#xd;
+        },&#xd;
+        {&#xd;
+            &quot;name&quot;: &quot;Dixie&quot;,&#xd;
+            &quot;Email&quot;: &quot;Porter.Lebsack84@yahoo.com&quot;,&#xd;
+            &quot;dt_nascimento&quot;: 1649970827,&#xd;
+            &quot;password&quot;: &quot;password 5&quot;,&#xd;
+            &quot;numberOfChildren&quot;: &quot;numberOfChildren 5&quot;,&#xd;
+            &quot;id&quot;: &quot;5&quot;&#xd;
+        },&#xd;
+        {&#xd;
+            &quot;name&quot;: &quot;Dario&quot;,&#xd;
+            &quot;Email&quot;: &quot;Orlando_Senger@yahoo.com&quot;,&#xd;
+            &quot;dt_nascimento&quot;: 1649970767,&#xd;
+            &quot;password&quot;: &quot;password 6&quot;,&#xd;
+            &quot;numberOfChildren&quot;: &quot;numberOfChildren 6&quot;,&#xd;
+            &quot;id&quot;: &quot;6&quot;&#xd;
+        },&#xd;
+        {&#xd;
+            &quot;name&quot;: &quot;Geo&quot;,&#xd;
+            &quot;Email&quot;: &quot;Carlie97@yahoo.com&quot;,&#xd;
+            &quot;dt_nascimento&quot;: 1649971007,&#xd;
+            &quot;password&quot;: &quot;password 2&quot;,&#xd;
+            &quot;numberOfChildren&quot;: &quot;numberOfChildren 2&quot;,&#xd;
+            &quot;id&quot;: &quot;2&quot;&#xd;
+        },&#xd;
+        {&#xd;
+            &quot;name&quot;: &quot;Santos&quot;,&#xd;
+            &quot;Email&quot;: &quot;Bart_Doyle87@gmail.com&quot;,&#xd;
+            &quot;dt_nascimento&quot;: 1649970647,&#xd;
+            &quot;password&quot;: &quot;password 8&quot;,&#xd;
+            &quot;numberOfChildren&quot;: &quot;numberOfChildren 8&quot;,&#xd;
+            &quot;id&quot;: &quot;8&quot;&#xd;
+        },&#xd;
+        {&#xd;
+            &quot;name&quot;: &quot;Parker&quot;,&#xd;
+            &quot;Email&quot;: &quot;Jordan92@hotmail.com&quot;,&#xd;
+            &quot;dt_nascimento&quot;: 1649970587,&#xd;
+            &quot;password&quot;: &quot;password 9&quot;,&#xd;
+            &quot;numberOfChildren&quot;: &quot;numberOfChildren 9&quot;,&#xd;
+            &quot;id&quot;: &quot;9&quot;&#xd;
+        },&#xd;
+        {&#xd;
+            &quot;name&quot;: &quot;Watson&quot;,&#xd;
+            &quot;Email&quot;: &quot;Casper_Ruecker40@hotmail.com&quot;,&#xd;
+            &quot;dt_nascimento&quot;: 1649970527,&#xd;
+            &quot;password&quot;: &quot;password 10&quot;,&#xd;
+            &quot;numberOfChildren&quot;: &quot;numberOfChildren 10&quot;,&#xd;
+            &quot;id&quot;: &quot;10&quot;&#xd;
+        }&#xd;
+    ],&#xd;
+    &quot;count&quot;: 10,&#xd;
+    &quot;anyKey&quot;: &quot;anyValue&quot;,&#xd;
+    &quot;message&quot;: &quot;/*teste*/ Usuário criado com sucesso&quot;&#xd;
+}</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">6258859f92dc8873186265de.mockapi.io</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/api/users</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="Ver Árvore de Resultados" enabled="true">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>true</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <sentBytes>true</sentBytes>
+              <url>true</url>
+              <threadCounts>true</threadCounts>
+              <idleTime>true</idleTime>
+              <connectTime>true</connectTime>
+            </value>
+          </objProp>
+          <stringProp name="filename"></stringProp>
+        </ResultCollector>
+        <hashTree/>
+      </hashTree>
+    </hashTree>
+  </hashTree>
+</jmeterTestPlan>

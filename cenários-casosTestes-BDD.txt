@@ -1,0 +1,32 @@
+#Language:pt
+
+Funcionalidade: Login
+
+    Para que eu possa cadastrar minhas tarefas
+    Sendo usuário
+    Posso acessar o sistema com meu email e senha previamente cadastrados.
+
+Cenario: Usuário deve ser autorizado 
+
+        Dado que eu acesso a página principal
+        Quando submeto minhas credenciais de "Email" e "senha"
+        Então Devo ser autenticado com sucesso 
+
+Cenario: Senha errada
+
+        Dado que eu acesso a página principal
+        Quando submeto minhas credenciais com a senha errada
+        Então devo ver a mensagem "Senha invalida"
+
+Cenario: Usuário não existe
+
+        Dado que eu acesso a página principal 
+        Quando submeto uma credencial não cadastrada 
+        Então devo ver a mensagem "Usuário não cadastrado"
+
+Cenario: Email incorreto 
+
+        Dado que eu acesso a página principal
+        Quando submeto minha credencial com o Email errado
+        Então devo ver a mensagem "Email incorreto ou ausente"
+
